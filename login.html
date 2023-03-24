@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      font-family: "poppins";
+      background-image: url(asset/img/cewe.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      color: #edeeff;
+    }
+    .login {
+      background-color: #040404;
+      width: 350px;
+      margin: auto;
+      padding: 50px;
+      margin-top: 200px;
+    }
+    .email {
+      padding: 15px;
+      width: 95%;
+      margin-bottom: 13px;
+      background-color: #575761;
+      color: #eef0ff;
+      outline: none;
+      border: none;
+      border-radius: 4px;
+      font-size: 1.2rem;
+    }
+    .btn {
+      background-color: #ff4b4b;
+      outline: none;
+      border: none;
+      color: #eef0ff;
+      width: 103%;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-top: 30px;
+      border-radius: 4px;
+    }
+    a {
+      color: #eef0ff;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+    /*
+  check
+  */
+    .check {
+      margin-top: 10px;
+      margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .login {
+        width: 250px;
+        padding: 40px;
+        margin-top: 100px;
+      }
+      .email {
+        padding: 15px;
+        width: 90%;
+        margin-bottom: 13px;
+        background-color: #575761;
+        color: #eef0ff;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+      .btn {
+        background-color: #ff4b4b;
+        outline: none;
+        border: none;
+        color: #eef0ff;
+        width: 103%;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-top: 30px;
+        border-radius: 4px;
+      }
+    }
+  </style>
+  <body>
+    <section class="login">
+      <div class="container">
+        <div class="login-item">
+          <h2>Masuk</h2>
+          <input
+            type="text"
+            placeholder="Email atau nomor telepon"
+            class="email"
+          />
+          <br />
+          <input type="password" placeholder="Sandi" class="email" />
+          <br />
+          <button class="btn">Masuk</button>
+          <div class="check">
+            <input type="checkbox" />Ingat saya
+
+            <a href="">Perlu Bantuan?</a>
+          </div>
+        </div>
+        <div class="login-content">
+          <p>Baru di Reiz Anime? <a href="">Daftar Sekarang</a></p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

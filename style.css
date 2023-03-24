@@ -1,0 +1,186 @@
+:root {
+  --wht: #e0e0e0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  background-color: #0e0e10;
+  color: var(--wht);
+  font-family: "poppins";
+}
+.container {
+  width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*
+navbar
+*/
+.navbar {
+  padding: 2% 0;
+  position: fixed;
+  width: 100%;
+  background-color: #0e0e10;
+}
+.nav-item a {
+  color: #ff3636;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+.nav-content a {
+  margin-left: 10px;
+  color: var(--wht);
+}
+.linkRed {
+  background-color: #ff3636;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+.linkBord {
+  border: 1px solid var(--wht);
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+/*
+anime
+*/
+.anime {
+  padding: 5% 0;
+}
+.item {
+  color: var(--wht);
+  text-align: center;
+  cursor: pointer;
+}
+.slider-content {
+  display: block;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.slider-item {
+  display: block;
+  white-space: nowrap;
+}
+.item {
+  display: inline-block;
+  width: 30%;
+  margin-right: 6px;
+}
+.item img {
+  width: 90%;
+}
+.judul {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}
+.popular {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.mt {
+  margin-top: 50px;
+}
+
+/*
+trailer
+*/
+.trailer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #0e0e10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  max-width: 100%;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.active.trailer {
+  visibility: hidden;
+}
+video {
+  width: 80%;
+}
+/*
+animes
+*/
+.animes {
+  padding: 2% 0;
+}
+
+/*
+responsif
+*/
+@media screen and (max-width: 600px) {
+  /*
+ navbar
+ */
+  .navbar {
+    padding: 5% 0;
+    position: fixed;
+    width: 100%;
+    background-color: #0e0e10;
+  }
+  /*
+end nav
+*/
+  .nav-item a {
+    display: none;
+  }
+  .nav-content a {
+    margin-left: 10px;
+    color: var(--wht);
+  }
+  .linkRed {
+    background-color: #ff3636;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  .linkBord {
+    border: 1px solid var(--wht);
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  /*
+anime
+*/
+  .item {
+    display: inline-block;
+    width: 40%;
+    margin-right: 6px;
+  }
+  /*
+video
+*/
+  .close {
+    font-size: 2rem;
+  }
+  video {
+    width: 90%;
+  }
+  .a2 {
+    margin: 40px 0;
+  }
+
+  .item img {
+    width: 100%;
+  }
+}
